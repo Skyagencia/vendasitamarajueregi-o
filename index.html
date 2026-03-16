@@ -158,16 +158,15 @@
         <h2>Veja o Agile em destaque</h2>
       </div>
 
-      <div class="video-wrapper">
-        <iframe
-          src="https://player.vimeo.com/video/1174167906"
-          width="640"
-          height="360"
-          frameborder="0"
-          allow="autoplay; fullscreen; picture-in-picture"
-          allowfullscreen>
-        </iframe>
-      </div>
+      <div class="video-wrapper mobile-video">
+  <iframe
+    src="https://player.vimeo.com/video/1174167906"
+    title="Vídeo do Agile"
+    frameborder="0"
+    allow="autoplay; fullscreen; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
 
       <p class="video-note">
         Vídeo real do veículo para você conferir mais detalhes.
@@ -183,17 +182,17 @@
       </div>
 
       <div class="gallery-grid">
-        <img src="agile-1.jpeg" alt="Foto 1 do Agile" />
-        <img src="agile-2.jpeg" alt="Foto 2 do Agile" />
-        <img src="agile-3.jpeg" alt="Foto 3 do Agile" />
-        <img src="agile-4.jpeg" alt="Foto 4 do Agile" />
-        <img src="agile-5.jpeg" alt="Foto 5 do Agile" />
-        <img src="agile-6.jpeg" alt="Foto 6 do Agile" />
-        <img src="agile-7.jpeg" alt="Foto 7 do Agile" />
-        <img src="agile-8.jpeg" alt="Foto 8 do Agile" />
-        <img src="agile-9.jpeg" alt="Foto 9 do Agile" />
-        <img src="agile-10.jpeg" alt="Foto 10 do Agile" />
-      </div>
+  <img src="agile-1.jpeg" alt="Foto 1 do Agile" class="gallery-img" />
+  <img src="agile-2.jpeg" alt="Foto 2 do Agile" class="gallery-img" />
+  <img src="agile-3.jpeg" alt="Foto 3 do Agile" class="gallery-img" />
+  <img src="agile-4.jpeg" alt="Foto 4 do Agile" class="gallery-img" />
+  <img src="agile-5.jpeg" alt="Foto 5 do Agile" class="gallery-img" />
+  <img src="agile-6.jpeg" alt="Foto 6 do Agile" class="gallery-img" />
+  <img src="agile-7.jpeg" alt="Foto 7 do Agile" class="gallery-img" />
+  <img src="agile-8.jpeg" alt="Foto 8 do Agile" class="gallery-img" />
+  <img src="agile-9.jpeg" alt="Foto 9 do Agile" class="gallery-img" />
+  <img src="agile-10.jpeg" alt="Foto 10 do Agile" class="gallery-img" />
+</div>
     </div>
   </section>
 
@@ -224,6 +223,11 @@
       <p>Agile 1.4 LTZ 2010/2011 • R$ 32.000 • Documento 2026 pago</p>
     </div>
   </footer>
+
+  <div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Fechar imagem">×</button>
+  <img id="lightboxImage" src="" alt="Imagem ampliada do Agile" />
+</div>
 
   <script src="script.js"></script>
 </body>
