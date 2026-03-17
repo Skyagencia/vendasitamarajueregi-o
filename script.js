@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
         fbq("track", "Contact");
         fbq("track", "Lead", {
           content_name: "Contato WhatsApp - Agile 1.4 LTZ",
+          content_category: "Veículo",
           value: 32000,
           currency: "BRL"
         });
@@ -34,13 +35,17 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.style.overflow = "";
   }
 
-  lightboxClose.addEventListener("click", closeLightbox);
+  if (lightboxClose) {
+    lightboxClose.addEventListener("click", closeLightbox);
+  }
 
-  lightbox.addEventListener("click", function (e) {
-    if (e.target === lightbox) {
-      closeLightbox();
-    }
-  });
+  if (lightbox) {
+    lightbox.addEventListener("click", function (e) {
+      if (e.target === lightbox) {
+        closeLightbox();
+      }
+    });
+  }
 
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape" && lightbox.classList.contains("active")) {
